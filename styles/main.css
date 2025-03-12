@@ -28,8 +28,9 @@ body {
     right: 1.5rem;
     z-index: 1000;
     cursor: pointer;
-    background: transparent;
-    border: none;
+    background: var(--background);
+    border: 2px solid var(--text);
+    border-radius: 4px;
     display: none;
     padding: 8px;
 }
