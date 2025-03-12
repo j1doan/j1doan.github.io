@@ -28,8 +28,9 @@ body {
     right: 1.5rem;
     z-index: 1000;
     cursor: pointer;
-    background: var(--background);
-    border: 2px solid var(--text);
+    background: transparent; /* Remove background */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow if present */
     border-radius: 4px;
     display: none;
     padding: 8px;
@@ -39,7 +40,7 @@ body {
     display: block;
     width: 30px;
     height: 3px;
-    background: var(--text);
+    background: var(--text); /* Use text color to display lines */
     margin: 6px 0;
     transition: var(--transition);
     border-radius: 2px;
