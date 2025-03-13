@@ -230,20 +230,14 @@ body {
     background: var(--secondary);
 }
 
-/* Responsive Design */
-/* If @media (max-width: 768px)
-    If width > 768 px (desktop): Hamburger hidden
-    If width <= 768 px (mobile): Hamburger visible */
-@media (max-width: 992px) {
-    .hamburger {
+.hamburger {
         display: block;
     }
 
-    .hero h1 {
+.hero h1 {
         font-size: 2.5rem;
     }
 
-    .projects-grid {
+.projects-grid {
         grid-template-columns: 1fr;
     }
-}
