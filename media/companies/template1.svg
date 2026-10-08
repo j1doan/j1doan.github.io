@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 90" role="img" aria-labelledby="title">
+  <title id="title">Replace with company logo</title>
+  <rect width="120" height="90" rx="8" fill="#e8f0fe"/>
+  <rect x="18" y="17" width="84" height="56" rx="4" fill="none" stroke="#4285f4" stroke-width="3"/>
+  <text x="60" y="48" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#174ea6">COMPANY</text>
+  <text x="60" y="85" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#174ea6">REPLACE SVG</text>
+</svg>

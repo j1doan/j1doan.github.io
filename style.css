@@ -1,0 +1,95 @@
+/* Shared base styles for the personal site. */
+
+body {
+  margin: 0;
+}
+
+a:link, a:visited {
+  color: rgb(57, 58, 58);
+  -webkit-text-decoration-color: #4285f4; /* safari still uses vendor prefix */
+  text-decoration-color: #4285f4;
+  font-weight: 400;
+}
+
+img, iframe {
+  max-width: 100%;
+}
+
+.media-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.media-entry img {
+  width: 90px;
+  height: 70px;
+  flex: 0 0 90px;
+  object-fit: contain;
+}
+
+.media-entry > div {
+  min-width: 0;
+}
+
+.media-entry h3 {
+  margin-top: 0;
+}
+
+.contact-form {
+  display: grid;
+  gap: 16px;
+  max-width: 600px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+}
+
+.form-group {
+  display: grid;
+  gap: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b8c4d6;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 2px solid #4285f4;
+  outline-offset: 1px;
+}
+
+.contact-form button {
+  justify-self: start;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 4px;
+  background: #4285f4;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+.honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Mobile fallback: the fixed 100px side padding and floated columns used on
+   desktop overflow small screens, so relax them below 700px. Desktop is untouched. */
+@media (max-width: 700px) {
+  .page-wrap {
+    margin: 0 !important;
+    padding: 24px !important;
+  }
+}
